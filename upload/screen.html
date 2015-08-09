@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="ACS251">
+    <meta name="keywords" content="Keyword 1,Keyword 2">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <title>Screen</title>
+    <script>
+    window.onresize = function screen() {
+        var s = "";
+
+        s += " 網頁可見區域寬：" + document.body.clientWidth + "<br>";
+
+        s += " 網頁可見區域高：" + document.body.clientHeight + "<br>";
+
+        s += " 網頁可見區域寬：" + document.body.offsetWidth + " (包括邊線和捲軸的寬)" + "<br>";
+
+        s += " 網頁可見區域高：" + document.body.offsetHeight + " (包括邊線的寬)" + "<br>";
+
+        s += " 網頁正文全文寬：" + document.body.scrollWidth + "<br>";
+
+        s += " 網頁正文全文高：" + document.body.scrollHeight + "<br>";
+
+        s += " 網頁被卷去的高(ff)：" + document.body.scrollTop + "<br>";
+
+        s += " 網頁被卷去的高(ie)：" + document.documentElement.scrollTop + "<br>";
+
+        s += " 網頁被卷去的左：" + document.body.scrollLeft + "<br>";
+
+        s += " 網頁正文部分上：" + window.screenTop + "<br>";
+
+        s += " 網頁正文部分左：" + window.screenLeft + "<br>";
+
+        s += " 螢幕解析度的高：" + window.screen.height + "<br>";
+
+        s += " 螢幕解析度的寬：" + window.screen.width + "<br>";
+
+        s += " 螢幕可用工作區高度：" + window.screen.availHeight + "<br>";
+
+        s += " 螢幕可用工作區寬度：" + window.screen.availWidth + "<br>";
+
+        s += " 你的螢幕設置是 " + window.screen.colorDepth + " 位彩色" + "<br>";
+
+        s += " 你的螢幕設置 " + window.screen.deviceXDPI + " 像素/英寸" + "<br>";
+
+        document.getElementById("screen").innerHTML = "";
+
+        document.getElementById("screen").innerHTML = s;
+
+    }
+    window.onload = function screen() {
+        var s = "";
+
+        s += " 網頁可見區域寬：" + document.body.clientWidth + "<br>";
+
+        s += " 網頁可見區域高：" + document.body.clientHeight + "<br>";
+
+        s += " 網頁可見區域寬：" + document.body.offsetWidth + " (包括邊線和捲軸的寬)" + "<br>";
+
+        s += " 網頁可見區域高：" + document.body.offsetHeight + " (包括邊線的寬)" + "<br>";
+
+        s += " 網頁正文全文寬：" + document.body.scrollWidth + "<br>";
+
+        s += " 網頁正文全文高：" + document.body.scrollHeight + "<br>";
+
+        s += " 網頁被卷去的高(ff)：" + document.body.scrollTop + "<br>";
+
+        s += " 網頁被卷去的高(ie)：" + document.documentElement.scrollTop + "<br>";
+
+        s += " 網頁被卷去的左：" + document.body.scrollLeft + "<br>";
+
+        s += " 網頁正文部分上：" + window.screenTop + "<br>";
+
+        s += " 網頁正文部分左：" + window.screenLeft + "<br>";
+
+        s += " 螢幕解析度的高：" + window.screen.height + "<br>";
+
+        s += " 螢幕解析度的寬：" + window.screen.width + "<br>";
+
+        s += " 螢幕可用工作區高度：" + window.screen.availHeight + "<br>";
+
+        s += " 螢幕可用工作區寬度：" + window.screen.availWidth + "<br>";
+
+        s += " 你的螢幕設置是 " + window.screen.colorDepth + " 位彩色" + "<br>";
+
+        s += " 你的螢幕設置 " + window.screen.deviceXDPI + " 像素/英寸" + "<br>";
+
+        document.getElementById("screen").innerHTML = "";
+
+        document.getElementById("screen").innerHTML = s;
+
+    };
+    </script>
+</head>
+
+<body>
+    <div id="screen"></div>
+</body>
+
+</html>
